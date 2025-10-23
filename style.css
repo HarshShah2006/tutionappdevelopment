@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #00b0ff 0%, #66e8ff 100%);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #00b0ff 0%, #00d5ff 100%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-left h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+/* ---------------- SIDE MENU ---------------- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: white;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  transition: 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: #00aaff;
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.side-menu a:hover {
+  color: #0086cc;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 30px;
+  cursor: pointer;
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+/* ---------------- MAIN CONTENT ---------------- */
+.app-container {
+  width: 100%;
+  max-width: 430px;
+  padding: 20px;
+  color: #000;
+  overflow-y: auto;
+}
+
+.logo-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+  margin: 20px 0;
+}
+
+.logo-card img {
+  width: 180px;
+}
+
+.logo-card h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #002a5b;
+}
+
+.logo-card p {
+  color: #555;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px 10px;
+  font-weight: 500;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.assignments {
+  background: linear-gradient(90deg, #ffeef2, #e7f8ff);
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.assignments h3 {
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.assignments p {
+  color: #555;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.history h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.test {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.test p {
+  font-size: 13px;
+  color: #777;
+}
+
+.analysis {
+  background: linear-gradient(90deg, #008cff, #00d1ff);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.score {
+  color: #777;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+}
